@@ -30,7 +30,7 @@
     <a href="https://github.com/revou-fundamental-course/26-jun-23-velvas45"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://react-fake-store-mm1o.vercel.app/">View Demo</a>
+    <a href="https://velvas45.github.io/egroceries/">View Demo</a>
   </p>
 </div>
 
@@ -58,8 +58,6 @@ Project EGROCERIES dibuat untuk memenuhi penilaian dari assignment yang diberika
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [![HTML][html]][html-url]
 - [![CSS][css]][css-url]

@@ -40,5 +40,5 @@ function submit() {
     onClick: function () {}, // Callback after click
   }).showToast();
 
-  setTimeout(() => (window.location.href = "/"), 1000);
+  setTimeout(() => window.location.reload(), 1000);
 }
