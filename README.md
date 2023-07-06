@@ -30,7 +30,7 @@
     <a href="https://github.com/revou-fundamental-course/26-jun-23-velvas45"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://velvas45.github.io/egroceries/">View Demo</a>
+    <a href="https://revou-fundamental-course.github.io/26-jun-23-velvas45/">View Demo</a>
   </p>
 </div>
 
@@ -51,7 +51,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://revou-fundamental-course.github.io/26-jun-23-velvas45/)
 
 Project EGROCERIES dibuat untuk memenuhi penilaian dari assignment yang diberikan oleh REVOU, website ini dibuat dengan HTML, CSS, JAVASCRIPT
 
