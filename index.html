@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moqups</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/loader.js"></script>
+    <script defer src="assets/js/validation.js"></script>
+  </head>
+  <body onload="removeLoader();">
+    <!-- loader -->
+    <div id="loader">
+      <canvas></canvas>
+    </div>
+    <section id="content">
+      <!-- Header -->
+      <header class="header">
+        <a href="#" class="header__title">
+          <h1>Moqups</h1>
+        </a>
+        <nav>
+          <ul class="header__nav-links">
+            <li class="header__nav-link"><a href="#banner">Home</a></li>
+            <li class="header__nav-link"><a href="#middle">Our Package</a></li>
+            <li class="header__nav-link"><a href="#footer">Call Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- main -->
+      <main class="main">
+        <!-- Banner -->
+        <section class="banner" id="banner">
+          <!-- overlay -->
+          <div class="banner__overlay">
+            <div class="banner__overlay-text">
+              <h1>Top Rated E-Groceries Shop in Indonesian</h1>
+              <p>Every Day with best ingredients</p>
+            </div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/banner/banner_1.jpg"
+                  loading="lazy"
+                  alt="banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/banner/banner_2.jpg"
+                  loading="lazy"
+                  alt="banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/banner/banner_3.jpg"
+                  loading="lazy"
+                  alt="banner"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- middle section -->
+        <section class="middle" id="middle">
+          <!-- Info -->
+          <div
+            class="middle__info"
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <img
+              src="./assets/img/egroceries_main.jpg"
+              alt="groceries"
+              loading="lazy"
+            />
+            <!-- info customer -->
+            <div class="middle__info-customer">
+              <p>"setiap hari beli sayur buah yang fresh disini"</p>
+              <div class="middle__customers">
+                <div class="middle__customer">
+                  <img
+                    src="https://ui-avatars.com/api/?background=random"
+                    alt="avatar"
+                  />
+                  <div class="middle__customer-desc">
+                    <h5>Florance Hughes</h5>
+                    <p>Ibu Rumah Tangga,28</p>
+                  </div>
+                </div>
+                <div class="middle__customer">
+                  <img
+                    src="https://ui-avatars.com/api/?background=random"
+                    alt="avatar"
+                  />
+                  <div class="middle__customer-desc">
+                    <h5>Florance Hughes</h5>
+                    <p>Ibu Rumah Tangga,28</p>
+                  </div>
+                </div>
+                <div class="middle__customer">
+                  <img
+                    src="https://ui-avatars.com/api/?background=random"
+                    alt="avatar"
+                  />
+                  <div class="middle__customer-desc">
+                    <h5>Florance Hughes</h5>
+                    <p>Ibu Rumah Tangga,28</p>
+                  </div>
+                </div>
+                <div class="middle__customer">
+                  <img
+                    src="https://ui-avatars.com/api/?background=random"
+                    alt="avatar"
+                  />
+                  <div class="middle__customer-desc">
+                    <h5>Florance Hughes</h5>
+                    <p>Ibu Rumah Tangga,28</p>
+                  </div>
+                </div>
+                <div class="middle__customer">
+                  <img
+                    src="https://ui-avatars.com/api/?background=random"
+                    alt="avatar"
+                  />
+                  <div class="middle__customer-desc">
+                    <h5>Florance Hughes</h5>
+                    <p>Ibu Rumah Tangga,28</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact -->
+          <div
+            class="middle__contact"
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div class="middle__contact-header">
+              <h1>Contact Us</h1>
+              <p>
+                Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+              </p>
+            </div>
+            <div class="middle__contact-form">
+              <!-- name -->
+              <div class="form__group">
+                <label for="name">Your Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  onchange="formValidation()"
+                />
+              </div>
+              <!-- email -->
+              <div class="form__group">
+                <label for="email">Email Address:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  onchange="formValidation()"
+                />
+                <span id="error_email" style="display: none"></span>
+              </div>
+              <div class="form__group">
+                <label for="interested">What are you interested in:</label>
+                <select
+                  name="interested"
+                  id="interested"
+                  onchange="formValidation()"
+                >
+                  <option value="">Choose Your Interested...</option>
+                  <option value="sayur">Sayur</option>
+                  <option value="buah">Buah</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                class="button__submit"
+                id="btnSubmit"
+                disabled
+                onclick="submit()"
+              >
+                SEND
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer" id="footer" data-aos="zoom-out">
+        <h1>
+          Use this space to provide users with more information about you offer.
+          Consider it a follow-up your headline and explain the benefits of your
+          service or product
+        </h1>
+        <ul class="footer__lists">
+          <li class="footer__list">
+            <span>1</span>
+            <p>
+              Your first feature, written in the form of a benefit statement
+            </p>
+          </li>
+          <li class="footer__list">
+            <span>2</span>
+            <p>
+              Your second feature, written in the form of a benefit statement
+            </p>
+          </li>
+          <li class="footer__list">
+            <span>3</span>
+            <p>
+              Your third feature, written in the form of a benefit statement
+            </p>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
