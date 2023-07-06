@@ -32,7 +32,7 @@
     <div id="loader">
       <canvas></canvas>
     </div>
-    <section id="content">
+    <main id="content">
       <!-- Header -->
       <header class="header">
         <a href="#" class="header__title">
@@ -41,15 +41,15 @@
         <nav>
           <ul class="header__nav-links">
             <li class="header__nav-link"><a href="#banner">Home</a></li>
-            <li class="header__nav-link"><a href="#middle">Our Package</a></li>
-            <li class="header__nav-link"><a href="#footer">Call Us</a></li>
+            <li class="header__nav-link"><a href="#package">Our Package</a></li>
+            <li class="header__nav-link"><a href="#call">Call Us</a></li>
           </ul>
         </nav>
       </header>
       <!-- main -->
-      <main class="main">
+      <section class="main">
         <!-- Banner -->
-        <section class="banner" id="banner">
+        <div class="banner" id="banner">
           <!-- overlay -->
           <div class="banner__overlay">
             <div class="banner__overlay-text">
@@ -82,14 +82,15 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- middle section -->
-        <section class="middle" id="middle">
+        <div class="middle" id="middle">
           <!-- Info -->
           <div
             class="middle__info"
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-bottom"
+            data-aos="flip-right"
+            data-aos-duration="300"
+            data-aos-offset="170"
           >
             <img
               src="./assets/img/egroceries_main.jpg"
@@ -156,8 +157,9 @@
           <!-- Contact -->
           <div
             class="middle__contact"
-            data-aos="fade-left"
-            data-aos-anchor-placement="top-bottom"
+            data-aos="flip-left"
+            data-aos-duration="300"
+            data-aos-offset="170"
           >
             <div class="middle__contact-header">
               <h1>Contact Us</h1>
@@ -210,36 +212,175 @@
               </button>
             </div>
           </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer class="footer" id="footer" data-aos="zoom-out">
+        </div>
+      </section>
+      <!-- feature -->
+      <section class="feature" data-aos="flip-up" data-aos-duration="300">
         <h1>
           Use this space to provide users with more information about you offer.
           Consider it a follow-up your headline and explain the benefits of your
           service or product
         </h1>
-        <ul class="footer__lists">
-          <li class="footer__list">
+        <ul class="feature__lists">
+          <li class="feature__list">
             <span>1</span>
             <p>
               Your first feature, written in the form of a benefit statement
             </p>
           </li>
-          <li class="footer__list">
+          <li class="feature__list">
             <span>2</span>
             <p>
               Your second feature, written in the form of a benefit statement
             </p>
           </li>
-          <li class="footer__list">
+          <li class="feature__list">
             <span>3</span>
             <p>
               Your third feature, written in the form of a benefit statement
             </p>
           </li>
         </ul>
+      </section>
+
+      <!-- package -->
+      <div class="package__banner" id="package">
+        <h1>Our Package</h1>
+      </div>
+      <section class="package">
+        <div class="package__contents-top">
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            <img src="./assets/img/icon/fresh.png" alt="fresh" />
+            <div class="package__content-desc">
+              <h3>Fresh Vegetable</h3>
+              <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+            </div>
+          </div>
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            <img src="./assets/img/icon/fruit.png" alt="fruit" />
+            <div class="package__content-desc">
+              <h3>Fresh Fruit</h3>
+              <p>
+                Buah dengan kualitas terbaik dari local atau import dan harga
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img
+              src="./assets/img/icon/fast-delivery.png"
+              alt="instant_delivery"
+            />
+            <div class="package__content-desc">
+              <h3>Instant Delivery</h3>
+              <p>
+                Di kirim instan oleh kurir yang telah di training dengan SOP
+                untuk menjaga kondisi belanja kamu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="package__contents-bottom">
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img
+              src="./assets/img/icon/vegetables.png"
+              alt="kitchen ingredient"
+            />
+            <div class="package__content-desc">
+              <h3>Kitchen Ingredient</h3>
+              <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+            </div>
+          </div>
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            <img src="./assets/img/icon/kitchen.png" alt="kitchen set" />
+            <div class="package__content-desc">
+              <h3>Kitchen Set</h3>
+              <p>Segala jenis alat masa untuk membantu kamu memasak</p>
+            </div>
+          </div>
+          <div
+            class="package__content-item"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            <img src="./assets/img/icon/packet.png" alt="packet" />
+            <div class="package__content-desc">
+              <h3>Bunding Set</h3>
+              <p>
+                Bingung masak apa? sudah tersedia paket untuk kamu masak di
+                dapur mu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Argument -->
+      <section class="call" id="call">
+        <h1
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="300"
+        >
+          Your Closing Argument Headline
+        </h1>
+        <p
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="200"
+          data-aos-duration="300"
+        >
+          Suspendisse egestas rhoncus urna in bibendum. Donec urna neque,
+          euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla
+          odio vel erat fringilla,
+        </p>
+        <a
+          href="#middle"
+          role="button"
+          class="button__submit"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+          data-aos-duration="300"
+          >CALL TO ACTION</a
+        >
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <h1>Moqups</h1>
+        <div class="footer__lists">
+          <p>Terms of service</p>
+          <p>Privacy Policy</p>
+        </div>
+        <span>@ 2019 Moqups</span>
       </footer>
-    </section>
+    </main>
   </body>
 </html>

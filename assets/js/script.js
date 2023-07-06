@@ -8,12 +8,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 // aos library
-AOS.init({
-  //   delay: 1000,
-  offset: 100,
-  duration: 500,
-  easing: "ease-in-out",
-});
+AOS.init();
 
 // Loader delete
 function removeLoader() {
